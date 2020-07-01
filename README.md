@@ -6,5 +6,5 @@ pypy mmsbm_recommender.py training_dataset test_dataset K L (sampling iterations
 The algorithm gives slightly different solutions depending on the initialization of the parameters. As none of these solutions is significantly better than the other we perform different random initializations ('sampling' in the code), and the final probability distribution over the ratings is the average over all of them.
 We suggest distributing the sampling process, given that they are independent processes which speed up the computation. For the iterations, fixing the iterations save computational time, but to fix the value ensure that likelihood is in a plateau. You can compute the likelihood from time to time to stop the iterations when the likelihood is not growing, but it also takes computational time.
 
-The output file with predictions is 'predictions.dat':
+The output file 'predictions.dat' includes:
 userID itemID real_rating prediction_rating ratings_probability_distribution
