@@ -1,6 +1,6 @@
 # MMSBMrecommender
-Code and files for the social recommendation mixed-membership stochastic block model algorithm (article https://www.pnas.org/content/113/50/14207)
-The code is written in Pypy (a Python interpreter), but you can use python just changing 'import _numpypy as np' by 'import numpy as np'. To run the code:
+Code and files for the social recommendation mixed-membership stochastic block model algorithm (article https://www.pnas.org/content/113/50/14207). 
+The code is written in Pypy (a Python interpreter)---you can use python just changing 'import _numpypy as np' by 'import numpy as np'. To run the code:
 pypy mmsbm_recommender.py training_dataset test_dataset K L (sampling iterations)
 where K is the number of group-memberships for users and L is the number of group memberships for items. "(sampling iterations)" are optional parameters. Default values are 1 for sampling and 200 for iterations.
 
