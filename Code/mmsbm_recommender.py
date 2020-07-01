@@ -30,7 +30,7 @@ except IndexError:
 try:
 	iterations=int(sys.argv[6])
 except IndexError:
-	iterations=20
+	iterations=200
 	pass
 linksr={}
 d0={}
